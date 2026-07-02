@@ -95,6 +95,10 @@ tr:hover th {
     color: black;
 }
 
+tr:hover td{
+    color: black;
+}
+
 tr:hover .order_links {
     color: black;
 }
