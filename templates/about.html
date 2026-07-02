@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Acerca De{% endblock %}
+
+{% block content %}
+
+<h1 class="about_title">Acerca de esta app</h1>
+
+<p class="about-description">
+    Esta aplicación es un Sistema de Gestión de Estudiantes desarrollado como un CRUD (Crear, Leer, Actualizar y Eliminar) dinámico. Su objetivo principal es facilitar la administración de alumnos en tiempo real, permitiendo registrar nuevos ingresos, buscar y modificar información clave como el DNI, contacto o carrera, y mantener un control organizado de la base de datos de manera ágil y eficiente.
+</p>
+
+<p class="about_declaration">Esta App fue creada con: </p>
+
+<div class="about_list">
+    <ol>
+        <li>Flask</li>
+        <li>PostgreSQL</li>
+        <li>Jinja2</li>
+        <li>HTML-CSS</li>
+    </ol>
+</div>
+
+<a href="{{ url_for('index') }}" class="about_item">Regresar</a>
+{% endblock %}

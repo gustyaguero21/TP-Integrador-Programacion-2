@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}Agregar estudiante{% endblock %}
+
+{% block content %}
+<h1 class="add_student_title">Agregar estudiante</h1>
+
+<form class="form-card" method="POST">
+    <label>DNI *</label>
+    <input type="text" name="dni" required>
+
+    <label>Apellido *</label>
+    <input type="text" name="apellido" required>
+
+    <label>Nombre *</label>
+    <input type="text" name="nombre" required>
+
+    <label>Email</label>
+    <input type="email" name="email">
+
+    <label>Telefono</label>
+    <input type="text" name="telefono">
+
+    <label>Edad</label>
+    <input type="number" name="edad">
+
+    <label>Carrera</label>
+    <select name="carrera" class="options">
+        <option value="Desarrollo de Software">Desarrollo de Software</option>
+        <option value="Enfermeria">Enfermeria</option>
+        <option value="Marketing">Marketing</option>
+        <option value="Profesorado de Matemática">Profesorado de Matemática</option>
+        <option value="Profesorado de Informática">Profesorado de Informática</option>
+        <option value="Mecatronica">Mecatronica</option>
+    </select>
+
+    <div class="buttons_edit_add">
+        <button type="submit">Guardar</button>
+        <a class="btn cancell" href="{{ url_for('index') }}">Cancelar</a>
+    </div>
+</form>
+{% endblock %}
