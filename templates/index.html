@@ -55,8 +55,12 @@
             <td>{{ estudiante.edad }}</td>
             <td>{{ estudiante.carrera }}</td>
             <td>
-                <a class="link edit" href="{{ url_for('editar', id=estudiante.id) }}">Editar</a>
-                <a class="link delete" href="{{ url_for('eliminar', id=estudiante.id) }}" onclick="return confirm('¿Seguro que desea eliminar este estudiante?')">Eliminar</a>
+                <a class="link edit" href="{{ url_for('editar', id=estudiante.id) }}">
+                <i class='bx bx-edit-alt bx-sm'></i>
+                </a>
+                <a class="link delete" href="{{ url_for('eliminar', id=estudiante.id) }}" onclick="return confirm('¿Seguro que desea eliminar este estudiante?')">
+                <i class='bx bxs-user-x bx-sm'></i>
+                </a>
             </td>
         </tr>
         {% else %}
